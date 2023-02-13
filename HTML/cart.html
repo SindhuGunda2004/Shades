@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shades - Cart</title>
+    <link href="../CSS/stylesheet.css" type="text/css" rel="stylesheet">
+    <script src="../JS/cart.js" async> </script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <!-- Website Name -->
+            <div class="webname">
+                Shades
+            </div>
+            <!--Navigation Icons -->
+            <nav>
+                <ul>
+                    <li class="logbtn"><a href="login.html"> <img src="../images/loginbtn.png" height="40" width="40">
+                        </a></li>
+                    <li class="cart"><a href="cart.html"> <img src="../images/cart.png" height="40" width="40"> </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--navigation of the pages-->
+        <div class="navigation">
+            <div>
+                <a href="../HTML/home.html"> <b>Home</b></a>
+                <a href="lipstick.html"><b>Lipsticks</b></a>
+                <a href="../HTML/sale.html"><b>Sale</b></a>
+            </div>
+        </div>
+    </header>
+    <!-- Search Bar -->
+    <div class="search">
+        <span>
+            <input id="search" type="text" placeholder="Search..">
+            <button class="sbtn" type="button">Search</button>
+        </span>
+    </div>
+    <br>
+    <!-- Page Heading -->
+    <div class="shopcart">
+        <h2>
+            Shopping Cart
+        </h2>
+    </div>
+
+    <!-- displaying all the shopping summary in the table -->
+    <div>
+        <table class="carttable">
+            <tr>
+                <th> Product </th>
+                <th> Quantity </th>
+                <th> Price </th>
+                <th> </th>
+            </tr>
+            <tr>
+                <td>Huda Beauty, Liquid Matte Lipstick</td>
+                <td> 1
+                </td>
+                <td>AED 115</td>
+                <td> <button class="removebtn">Remove</button> </td>
+            </tr>
+            <tr>
+                <td>Dior Rouge, Dior Forever</td>
+                <td>4</td>
+                <td>AED 780</td>
+                <td> <button class="removebtn">Remove</button> </td>
+            </tr>
+            <tr>
+                <td>MAC, Matte Lipstick </td>
+                <td>1</td>
+                <td>AED 105</td>
+                <td> <button class="removebtn">Remove</button> </td>
+            </tr>
+            <tr>
+                <td>Wish You Were Here, Matte Liquid Lipstick </td>
+                <td>2</td>
+                <td>AED 158</td>
+                <td> <button class="removebtn">Remove</button> </td>
+            </tr>
+        </table>
+        
+        <!-- displaying the Shipping Charges -->
+        <div class="shipcharge" style="color: white;">
+            <span>
+                <h4 class="shipamt" style="margin-left: 20px; ">Shipping Charges</h4>
+                <h4 class="shipprice" style="margin-right: 20px; ">AED 20</h4>
+            </span>
+        </div>
+        <br><br>
+        <!-- Displaying Total amount along with shipping charge -->
+        <div class="tamt" style="color: white;">
+            <span>
+                <h4 class="amt" >Total Amount</h4>
+                <h4 class="tprice">AED 1178</h4>
+            </span>
+        </div>
+        <br><br>
+        <div class="pbtn">
+            <p>
+                <button class="proceedbtn">Proceed</button>
+            </p>
+        </div>
+    </div>
+    <br>
+</body>
+
+<!-- Page Footer -->
+<footer>
+    <div>
+        <ul>
+            <li class="insta"><a> <img src="../images/footer/insta.png" height="45" width="45"> </a></li>
+            <li class="twitter"><a> <img src="../images/footer/twitter.png" height="40" width="40"> </a></li>
+            <li class="snapchat"><a> <img src="../images/footer/snapchat.png" height="40" width="40"> </a></li>
+            <li class="fb"><a> <img src="../images/footer/fb.png" height="35" width="35"> </a></li>
+        </ul>
+        <div class="footname">
+            <h2 style="text-align: center;">Shades </h2>
+            <div><p style="display: flex; text-align: center; ">Contact Us 0448753482 <br> Shades © </p></div>
+        </div>
+    </div>
+</footer>
+
+</html>

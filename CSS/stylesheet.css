@@ -1,0 +1,591 @@
+/* Common CSS */
+@font-face {
+    font-family: 'breathingregular';
+    src: url('../Extras/breathing_regular-webfont.woff2') format('woff2'),
+        url('../Extras/breathing_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #000;
+    margin: 0;
+    font-family: 'breathingregular';
+}
+
+/* Website Name CSS */
+.webname {
+    font-family: 'breathingregular';
+    color: white;
+    margin-left: 658px;
+    font-size: 30px;
+    position: absolute;
+}
+
+nav {
+    background-color: #c9184a;
+    height: 8%;
+    width: 100%;
+    overflow: auto;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 0 0 0px;
+    list-style: none;
+}
+
+nav li {
+    padding-top: 10px;
+    margin-right: 20px;
+    position: relative;
+    float: right;
+}
+
+.navigation {
+    /*styling navigation on every page*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3px;
+    font-size: 22px;
+    font-family: 'breathingregular';
+    overflow: hidden;
+}
+
+.navigation a {
+    /*the styling of the pages on the navigation bar*/
+    margin: 190px;
+    /* color: #602437;   */
+    color: white;
+}
+
+/* common CSS */
+#search {
+    padding: 10px;
+    margin-left: 29px;
+    font-size: 15px;
+    text-align: center;
+    width: 1220px;
+    height: 25px;
+}
+
+.sbtn {
+    color: white;
+    width: 90px;
+    padding: 7px;
+    margin-left: 40px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #e87ea1;
+    font-family: 'breathingregular';
+    border: none;
+    border-radius: 5px;
+}
+
+/* Home page CSS , sale page */
+.shopnow {
+    font-weight: bold;
+    font-family: 'breathingregular';
+    padding: 0px;
+    margin: 0%;
+}
+
+.shopnow .shopi {
+    position: absolute;
+    top: 65%;
+    left: 72%;
+    color: white;
+    font-size: 20px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 5px;
+}
+
+.salebanner {
+    margin-left: 10%;
+}
+
+.bestsellers {
+    font-family: 'breathingregular';
+    background-color: #ff758f;
+    text-align: center;
+    padding: 0px;
+    font-size: small;
+}
+
+.categories button {
+    font-family: 'breathingregular';
+    background-color: #ff758f;
+    text-align: center;
+    padding: 3px;
+    width: 90px;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+}
+
+.products {
+    font-family: 'breathingregular';
+}
+
+.row {
+    margin-left: 155px;
+}
+
+.column {
+    float: left;
+    width: 23%;
+    padding: 5px;
+}
+
+.column img {
+    /* border: 2px solid black; */
+    border: 2px solid white;
+}
+
+.columns {
+    float: left;
+    width: 23%;
+    /* padding-right: 95px; */
+    padding: 5px;
+}
+
+.columns img {
+    /* border: 2px solid black; */
+    border: 2px solid white;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.trow {
+    margin-left: 185px;
+}
+
+.tcolumn {
+    color: white;
+    float: left;
+    width: 23%;
+    padding: 5px;
+}
+
+.tcolumn:hover {
+    text-decoration: underline;
+}
+
+/* Clear floats after image containers */
+.trow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.brow {
+    margin-left: 185px;
+}
+
+.bcolumn {
+    float: left;
+    width: 23%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.brow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn {
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e87ea1;
+    color: white;
+    font-family: 'breathingregular';
+}
+
+/* Footer CSS (Common) */
+footer {
+    color: white;
+    font-family: 'breathingregular';
+    background-color: #c9184a;
+    margin-bottom: 0%;
+    height: 110px;
+    width: 100%;
+    overflow: auto;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0 0 0 0px;
+    list-style: none;
+}
+
+footer li {
+    padding-top: 10px;
+    margin-right: 20px;
+    position: relative;
+    float: left;
+}
+
+.footname {
+    padding: 0%;
+    margin-left: 675px;
+    font-size: 12px;
+    position: absolute;
+}
+
+.footname p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+
+/* Cart page CSS */
+.shopcart {
+    color: white;
+    text-align: center;
+}
+
+.removebtn {
+    border: none;
+    border-radius: 5px;
+    background-color: #e87ea1;
+    color: white;
+}
+
+.amt {
+    float: left;
+    margin-left: 10px;
+    margin-right: 1050px;
+}
+
+.tprice {
+    float: right;
+    margin-right: 20px;
+}
+
+.shipamt {
+    float: left;
+    margin-left: 20px;
+}
+
+.shipprice {
+    float: right;
+    margin-right: 20px;
+}
+
+table {
+    color: white;
+    text-align: justify;
+    border: black;
+    /* border: 2px solid;
+    border-collapse: collapse; */
+    font-size: large;
+    /* color: black; */
+    width: 100%;
+    padding: 30px;
+}
+
+th {
+    text-align: justify;
+    /* border: 2px solid; */
+}
+
+td {
+    /* border: 2px solid; */
+    padding: 10px;
+    text-align: justify;
+    font-size: small;
+}
+
+td button {
+    width: 90px;
+    font-family: 'breathingregular';
+    padding: 1px;
+    margin-right: 20px;
+    float: right;
+}
+
+.pbtn p {
+    text-align: center;
+}
+
+.proceedbtn {
+    color: white;
+    width: 90px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #e87ea1;
+    font-family: 'breathingregular';
+    border: none;
+    border-radius: 5px;
+}
+
+/* sale page CSS */
+.lastchance {
+    font-family: 'breathingregular';
+    background-color: #ff758f;
+    text-align: center;
+    padding: 0px;
+    font-size: small;
+}
+
+.trow {
+    margin-left: 185px;
+}
+
+.tcolumn {
+    float: left;
+    width: 23%;
+    padding: 5px;
+}
+
+.tcolumn:hover {
+    text-decoration: underline;
+}
+
+/* Clear floats after image containers */
+.trow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* product page CSS */
+.container {
+    width: 85%;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    margin: 0%;
+    width: 90%;
+    max-width: 850px;
+    display: flex;
+}
+
+.gallery {
+    position: relative;
+    flex-basis: 60%;
+    transform: scale(1.08);
+}
+
+.gallery img {
+    margin-left: 21%;
+    width: 100%;
+    display: block;
+}
+
+.details {
+    color: white;
+    flex-basis: 90%;
+    padding-top: 0%;
+    padding-left: 150px;
+}
+
+.details h2 {
+    font-size: 30px;
+}
+
+.details h3 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.details h6 {
+    font-size: 15px;
+    color: rgb(165, 163, 163);
+}
+
+.quantityselect {
+    line-height: 0.1em;
+    display: flex;
+    align-items: center;
+}
+
+.quantityselect p {
+    width: 70px;
+}
+
+.quantityselect input {
+    margin-left: 30px;
+    background: #eee;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 70px;
+    height: 20px;
+    border-radius: 18px;
+}
+
+form button {
+    color: white;
+    width: 420px;
+    padding: 5px;
+    margin-top: 15px;
+    align-items: center;
+    font-size: 15px;
+    background-color: #e87ea1;
+    font-family: 'breathingregular';
+    border: none;
+    border-radius: 5px;
+}
+
+.proddesc {
+    color: white;
+    padding: 90px;
+}
+
+.star {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#productimg {
+    position: absolute;
+    margin-left: 21%;
+    width: 100%;
+}
+
+.ibtn {
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: black;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* picture CSS change */
+.color-content {
+    display: flex;
+
+}
+
+.color-content h3 {
+    line-height: 0.5em;
+    font-size: 20px;
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.color-red {
+    background-color: #CB1C17;
+}
+
+.color-nude {
+    background-color: #C27769;
+}
+
+.color-pink {
+    background-color: #D0395F;
+}
+
+.color-maroon {
+    background-color: #AB2F3C;
+}
+
+.color:hover {
+    box-shadow: 0 0 8px 0 white;
+}
+
+.active-color {
+    box-shadow: 0 0 8px 0 white;
+}
+
+.color-groups {
+    margin-left: 50px;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+/* Login and register page CSS */
+
+.log {
+    color: #eee;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.regi {
+    text-align: center;
+    padding: 30px;
+
+}
+
+.regi a {
+    color: white;
+}
+
+.regi {
+    color: white;
+
+}
+
+/* User Profile page CSS */
+.userinfo {
+    color: #eee;
+    font-family: 'breathingregular';
+    font-size: medium;
+    text-align: center;
+}
+
+.userinfo2 {
+    color: #eee;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-small;
+    text-align: center;
+
+}
+
+.userinfo2 button {
+    font-family: 'breathingregular';
+    background-color: #ff758f;
+    text-align: center;
+    padding: 3px;
+    width: 90px;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+}
+
+.orders {
+
+    color: #eee;
+    font-family: 'breathingregular';
+    font-size: medium;
+    text-align: center;
+
+}
+
+.order2 {
+    text-align: center;
+}

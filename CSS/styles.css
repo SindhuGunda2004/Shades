@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'breathingregular';
+    src: url('../Extras/breathing_regular-webfont.woff2') format('woff2'),
+        url('../Extras/breathing_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    color: white;
+}
+
+.name {
+    font-size: 30px;
+    font-family: 'breathingregular';
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+
+    margin-left: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-family: 'Brush Script MT';
+    font-size: 25px;
+    background-color: #F17F9F;
+    padding: 5px 110px;
+    color: #FF8BAB;
+    border: 2px solid #FF8BAB;
+    color: white;
+}
+
