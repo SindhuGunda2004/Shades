@@ -24,6 +24,7 @@ function register() {
     //Extract registration data
     let usrFirstName = document.getElementById("fname").value;
     let usrLastName = document.getElementById("lname").value;
+    
     let usrAddress = document.getElementById("address").value;
     let usrPassword = document.getElementById("password").value;
 
