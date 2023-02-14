@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--title of the page-->
+    <title>register page - register</title>
+    <!-- Link to external style sheet -->
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <script src="../js/common.js"></script>
+</head>
+
+<body>
+    <!-- <header>
+        <div>
+            Website name
+            <div class="webname">
+                Shades
+            </div>
+            Navigation Icons
+            <nav>
+                <ul>
+                    <li class="logbtn"><a href="login.html"> <img src="../images/loginbtn.png" height="40" width="40">
+                        </a></li>
+                    <li class="cart"><a href="cart.html"> <img src="../images/cart.png" height="40" width="40"> </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        navigation of the pages
+        <div class="navigation">
+            <div>
+                <a class="selected" href="home.html"> <b>Home</b></a>
+                <a href="lipstick.html"><b>Lipsticks</b></a>
+                <a href="sale.html"><b>Sale</b></a>
+            </div>
+        </div>
+    </header> -->
+
+    <div>
+        <!--content of the page-->
+        <h1 class="titlepage2" style="color: white; text-align: center;">Register</h1>
+
+        <form>
+            <!--input from the user register and submit-->
+            <div class="regi">
+
+                <body>
+
+                    <p>
+                        <!-- Registration input fields -->
+                    <form action="../PHP/register.php" method="post">
+                        First Name : &ensp; <input type="name" style="height:20px; width:300px"
+                            id="fname" name="fname"><br><br>
+                        Last Name : &ensp; <input type="name" style="height:20px; width:300px"
+                            id="lname" name="lname"><br><br>
+                        Email : &ensp;&ensp;&ensp; <input type="email" style="height:20px; width:300px"
+                            id="email" name="email"><br><br>
+                        Phone number :&ensp;<input type="number" style="height:20px; width:300px"
+                            id="phno" name="phno"><br><br>
+                        Address (Country, city and apt no.) : <input type="address" style="height:20px; width:300px"
+                            id="address" name="address"><br><br>
+                        Password : &ensp;&ensp; <input type="password" style="height:20px; width:300px"
+                            id="pass" name="pass"><br><br>
+                        Confirm Password : <input type="password" style="height:20px; width:300px"
+                            id="cpass" name="cpass"><br><br>
+
+                        <button style="background-color: #ff758f;" type="submit">Register</button>
+
+                        <br>
+                        <p>Already a user?<a style="text-align:center" href="../html/login.html">Login here</a></p>
+
+                    </form>
+
+                    <script src="../JS/register.js"></script>
+                    </p>
+                </body>
+
+            </div>
+        </form>
+    </div>
+
+    <br><br>
+
+    <!-- Page footer -->
+    <footer>
+        <div>
+            <ul>
+                <li class="insta"><a> <img src="../images/footer/insta.png" height="45" width="45"> </a></li>
+                <li class="twitter"><a> <img src="../images/footer/twitter.png" height="40" width="40"> </a></li>
+                <li class="snapchat"><a> <img src="../images/footer/snapchat.png" height="40" width="40"> </a></li>
+                <li class="fb"><a> <img src="../images/footer/fb.png" height="35" width="35"> </a></li>
+            </ul>
+            <div class="footname">
+                <h2 style="text-align: center;">Shades </h2>
+                <div>
+                    <p style="display: flex; text-align: center; ">Contact Us 0448753482 <br> Shades © </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
