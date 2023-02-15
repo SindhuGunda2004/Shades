@@ -12,7 +12,7 @@ $db = $mongoClient->shadesDB;
 //Select a collection 
 $collection = $db->Customers;
 
-//Extract the data that was sent to the server
+//Get name and address strings - need to filter input to reduce chances of SQL injection etc.
 $fname = filter_input(INPUT_POST, 'fname', FILTER_SANITIZE_STRING);
 $lname = filter_input(INPUT_POST, 'lname', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
@@ -21,7 +21,7 @@ $address = filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, 'pass', FILTER_SANITIZE_STRING);
 $confirmPassword = filter_input(INPUT_POST, 'cpass', FILTER_SANITIZE_STRING);
 
-//Convert to PHP array
+
 $dataArray = [
     "fname" => $fname,
     "lname" => $lname, 

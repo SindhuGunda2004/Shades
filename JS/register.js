@@ -1,6 +1,5 @@
-
 function register() {
-    //Create request object 
+    //Create request object
     let request = new XMLHttpRequest();
 
     //Create event handler that specifies what should happen when server responds
@@ -22,12 +21,16 @@ function register() {
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
     //Extract registration data
+
     let usrFirstName = document.getElementById("fname").value;
     let usrLastName = document.getElementById("lname").value;
-    
+    let usrEmail = document.getElementById("email").value;
+    let usrPhone = document.getElementById("phno").value;
     let usrAddress = document.getElementById("address").value;
-    let usrPassword = document.getElementById("password").value;
+    let usrPassword = document.getElementById("pass").value;
+    let usrCPassword = document.getElementById("cpass").value;
 
     //Send request
-    request.send("fname=" + usrFirstName + "&lname=" + usrLastName + "&address=" + usrAddress + "&password=" + usrPassword);
+    request.send("fname=" + usrFirstName + "&lname=" + usrLastName + "&email=" + usrEmail 
+    + "&phno=" + usrPhone  + "&address=" + usrAddress + "&pass=" + usrPassword + "&cpass=" + usrCPassword);
 }
