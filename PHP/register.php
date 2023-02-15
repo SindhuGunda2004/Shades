@@ -10,7 +10,7 @@ $mongoClient = (new MongoDB\Client);
 $db = $mongoClient->shadesDB;
 
 //Select a collection 
-$collection = $db->Customers;
+$collection = $db->customer;
 
 //Get name and address strings - need to filter input to reduce chances of SQL injection etc.
 $fname = filter_input(INPUT_POST, 'fname', FILTER_SANITIZE_STRING);

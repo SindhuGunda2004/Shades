@@ -9,8 +9,11 @@ function register() {
             //Get data from server
             let responseData = request.responseText;
 
+            alert("User registered, now you can login to your account");
+            location.reload();
+
             //Add data to page
-            document.getElementById("ServerResponse").innerHTML = responseData;
+            // document.getElementById("ServerResponse").innerHTML = responseData;
         }
         else
             alert("Error communicating with server: " + request.status);
@@ -33,4 +36,6 @@ function register() {
     //Send request
     request.send("fname=" + usrFirstName + "&lname=" + usrLastName + "&email=" + usrEmail 
     + "&phno=" + usrPhone  + "&address=" + usrAddress + "&pass=" + usrPassword + "&cpass=" + usrCPassword);
+
+    
 }
