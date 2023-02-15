@@ -9,11 +9,9 @@ function register() {
             //Get data from server
             let responseData = request.responseText;
 
+            // telling the user that they are registered and redirecting them to login page. 
             alert("User registered, now you can login to your account");
-            location.reload();
-
-            //Add data to page
-            // document.getElementById("ServerResponse").innerHTML = responseData;
+            window.location.replace("../HTML/login.html");
         }
         else
             alert("Error communicating with server: " + request.status);
