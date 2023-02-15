@@ -6,11 +6,21 @@
     <title>login page - login</title>
     <!-- Link to external style sheet -->
     <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
-    <script src="../js/common.js"></script>
+    <style>
+        button {
+            font-family: 'breathingregular';
+            font-size: 18px;
+            background-color: #F17F9F;
+            padding: 2px 110px;
+            color: #FF8BAB;
+            border: 2px solid #FF8BAB;
+            color: #FFFFFF;
+        }
+    </style>
 </head>
 
 <body>
-    
+
     <header>
         <div>
             <!-- Website name -->
@@ -39,30 +49,20 @@
     <h1 class="titlepage" style="color: white; text-align: center;">User Login</h1>
     <br>
 
-    <form>
+    <script src="../JS/login.js"></script>
+    <div>
         <!--input from the user login and submit-->
         <div class="log">
             <label style="margin-right:270px;" for="email">Email :</label><br>
             <input type="email" id="email" name="email" style="height:25px; width:380px"><br><br>
-            <label style="margin-right:220px;" for="pwd">Password :</label><br>
-            <input type="password" id="pwd" name="pwd" style="height:25px; width:380px"><br><br>
-            <button type="submit" style="
-             font-family: 'breathingregular';
-             font-size: 18px;
-             background-color: #F17F9F;
-             padding: 2px 110px;
-             color: #FF8BAB;
-             border: 2px solid #FF8BAB;
-             color: #FFFFFF;" > <a href="../HTML/userpage.html" style="text-decoration: none; color: white;">Login</a> </button>
+            <label style="margin-right:220px;" for="pass">Password :</label><br>
+            <input type="password" id="pass" name="pass" style="height:25px; width:380px"><br><br>
+            <button type="submit" onclick="login()"> Login </button>
         </div>
-        <div></div>
+
         <div class="regi">
             <a href="../html/register.html" style="line-height: 0.1em;">Not Registered? Register here</a><br>
-
         </div>
-    </form>
-
-
     </div>
     <br><br>
 
