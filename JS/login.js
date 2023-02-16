@@ -35,7 +35,7 @@ function login(){
             //Get data from server
             alert("three");
             var responseData = request.responseText;
-            
+
             //Add data to page
             if(responseData === "ok"){
                 // document.getElementById("LoginPara").innerHTML = loggedInStr;
@@ -44,11 +44,11 @@ function login(){
                 alert("ok", request.responseText);
                 location.reload();
             }
-            // else{
-            //     // document.getElementById("ErrorMessages").innerHTML = request.responseText;
-            //     alert("Error");
-            //     alert(request.responseText);
-            // }
+            else{
+                // document.getElementById("ErrorMessages").innerHTML = request.responseText;
+                alert("Error");
+                alert(request.responseText);
+            }
         }
         else{
             // document.getElementById("ErrorMessages").innerHTML = "Error communicating with server";

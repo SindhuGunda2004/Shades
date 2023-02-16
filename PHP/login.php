@@ -47,7 +47,3 @@
     //Inform web page that login is successful
     echo 'Hello '. $customer['fname']  ;  
     }
-        
-   
-	
-    
