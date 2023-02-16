@@ -35,8 +35,8 @@
     $resultArray = $db->customer->find($findCriteria)->toArray();
 
     if($resultArray != $password){
-        echo "`$resultArray`";
-        echo "`$password`";
+        echo " Password: `$resultArray`";
+        echo "password: `$password`";
         echo 'Password incorrect.';
         return;
     }
