@@ -1,49 +1,32 @@
 <?php
-    //Start session management
-    session_start();
 
-    //Get name and address strings - need to filter input to reduce chances of SQL injection etc.
-    $email= filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
-    $password = filter_input(INPUT_POST, 'pass', FILTER_SANITIZE_STRING);    
-
-    //Connect to MongoDB and select database
-	require __DIR__ . '/vendor/autoload.php';//Include libraries
-	$mongoClient = (new MongoDB\Client);//Create instance of MongoDB client
-
-	$db = $mongoClient->shadesDB;
-	
-    //Create a PHP array with our search criteria
-    $findCriteria = [ "email" => $email ];
-
-    //Find all of the customers that match  this criteria
-    $resultArray = $db->customer->find($findCriteria)->toArray();
-
-    //Check that there is exactly one customer
-    if(count($resultArray) == 0){
-        echo 'Customer email not found';
-        return;
-    }
-    else if(count($resultArray) > 1){
-        echo 'Database error: Multiple customers have same email address.';
-        return;
-    }
-   
-    //Get customer and check password
-    $customer = $resultArray[0];
-
-    $findCriteria = [ "pass" => $password ];
-    $resultArray = $db->customer->find($findCriteria)->toArray();
-
-    if($resultArray != $password){
-        echo " Password: `$resultArray`";
-        echo "password: `$password`";
-        echo 'Password incorrect.';
-        return;
-    }
-    else{
-         //Start session for this user
-    $_SESSION['loggedInUserEmail'] = $email;
+//Include libraries
+require __DIR__ . '/vendor/autoload.php';
     
-    //Inform web page that login is successful
-    echo 'Hello '. $customer['fname']  ;  
-    }
+// //Create instance of MongoDB client
+$mongoClient = (new MongoDB\Client);
+
+// //Select a database
+$db = $mongoClient->shadesDB;
+
+// //Select a collection 
+$collection = $db->customer;
+$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
+$password = filter_input(INPUT_POST, 'pass', FILTER_SANITIZE_STRING);
+$criteria = array(
+    'email' => $email,
+  );
+
+$doc = $collection->findOne(['email' => $email]);
+$jsonData = json_encode($doc);
+
+if(!empty($doc)){
+    header('Content-Type: application/json');
+echo $jsonData;
+}
+else{
+    echo 
+    '[
+        {
+        "email" : "'.$email.'" } ]';
+}
