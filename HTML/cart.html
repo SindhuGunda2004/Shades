@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Shades - Cart</title>
     <link href="../CSS/stylesheet.css" type="text/css" rel="stylesheet">
@@ -48,8 +49,9 @@
     </div>
 
     <!-- displaying all the shopping summary in the table -->
-    <div>
-        <table class="carttable">
+    <div class="carttable">
+        <script src="../JS/cart.js"></script>
+        <!-- <table class="carttable">
             <tr>
                 <th> Product </th>
                 <th> Quantity </th>
@@ -58,53 +60,53 @@
             </tr>
             <tr>
                 <td>Huda Beauty, Liquid Matte Lipstick</td>
-                <td> 1
+                <td> <input type="number"> 
                 </td>
                 <td>AED 115</td>
                 <td> <button class="removebtn">Remove</button> </td>
             </tr>
             <tr>
                 <td>Dior Rouge, Dior Forever</td>
-                <td>4</td>
+                <td><input type="number"> </td>
                 <td>AED 780</td>
                 <td> <button class="removebtn">Remove</button> </td>
             </tr>
             <tr>
                 <td>MAC, Matte Lipstick </td>
-                <td>1</td>
+                <td><input type="number"> </td>
                 <td>AED 105</td>
                 <td> <button class="removebtn">Remove</button> </td>
             </tr>
             <tr>
                 <td>Wish You Were Here, Matte Liquid Lipstick </td>
-                <td>2</td>
+                <td><input type="number"> </td>
                 <td>AED 158</td>
                 <td> <button class="removebtn">Remove</button> </td>
             </tr>
-        </table>
-        
-        <!-- displaying the Shipping Charges -->
-        <div class="shipcharge" style="color: white;">
-            <span>
-                <h4 class="shipamt" style="margin-left: 20px; ">Shipping Charges</h4>
-                <h4 class="shipprice" style="margin-right: 20px; ">AED 20</h4>
-            </span>
-        </div>
-        <br><br>
-        <!-- Displaying Total amount along with shipping charge -->
-        <div class="tamt" style="color: white;">
-            <span>
-                <h4 class="amt" >Total Amount</h4>
-                <h4 class="tprice">AED 1178</h4>
-            </span>
-        </div>
-        <br><br>
-        <div class="pbtn">
-            <p>
-                <button class="proceedbtn">Proceed</button>
-            </p>
-        </div>
+        </table> -->
     </div>
+    <!-- displaying the Shipping Charges -->
+    <div class="shipcharge" style="color: white;">
+        <span>
+            <h4 class="shipamt" style="margin-left: 20px; ">Shipping Charges</h4>
+            <h4 class="shipprice" style="margin-right: 20px; ">AED 20</h4>
+        </span>
+    </div>
+    <br><br>
+    <!-- Displaying Total amount along with shipping charge -->
+    <div class="tamt" style="color: white;">
+        <span>
+            <h4 class="amt">Total Amount</h4>
+            <h4 class="tprice">AED 1178</h4>
+        </span>
+    </div>
+    <br><br>
+    <div class="pbtn">
+        <p>
+            <button class="proceedbtn">Proceed</button>
+        </p>
+    </div>
+
     <br>
 </body>
 
@@ -119,7 +121,9 @@
         </ul>
         <div class="footname">
             <h2 style="text-align: center;">Shades </h2>
-            <div><p style="display: flex; text-align: center; ">Contact Us 0448753482 <br> Shades © </p></div>
+            <div>
+                <p style="display: flex; text-align: center; ">Contact Us 0448753482 <br> Shades © </p>
+            </div>
         </div>
     </div>
 </footer>
